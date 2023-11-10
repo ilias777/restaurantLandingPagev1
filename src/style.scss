@@ -1,3 +1,68 @@
-h1 {
-  color: blue;
+$gold-color: #a17d53;
+
+html {
+  font-size: 62.5%;
 }
+::selection {
+  color: white;
+  background: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Lobster", cursive;
+}
+h2 {
+  font-size: 5.5rem;
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 3.5rem;
+}
+h4 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+h6 {
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+p {
+  font-size: 1.5rem;
+  ::selection {
+    color: white;
+    background: black;
+  }
+}
+li {
+  font-size: 2rem;
+}
+a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+//@import "home";
+//@import "bestfood";
+//@import "about";
+//@import "blog";
+//@import "footer";
+@import "styles/data";
+@import "styles/allergene";
+//@import "menu-circle";
+@import "styles/foodmenu";
+@import "styles/speisekarte";
+@import "styles/mediaqueries";
