@@ -7,8 +7,6 @@ This is a simple small responsive landing page for a restaurant
 ## Screenshot
 
 <img width="1375" alt="page" src="https://github.com/ilias777/restaurantLandingPagev1/assets/39212564/37207de9-808f-4085-bf84-c4e512d2b330">
-![site](https://github.com/ilias777/restaurantLandingPagev1/assets/39212564/c67d51a5-1dd8-4952-80fc-9a651ada5479)
-
 
 ## Site specification
 
