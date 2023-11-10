@@ -4,4 +4,6 @@ node_modules/
 
 ./src/.DS_Store
 
-.parcel_cache/
+.parcel-cache/
+
+dist/
