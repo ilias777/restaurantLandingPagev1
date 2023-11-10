@@ -4,12 +4,15 @@
   "description": "Landing page for a restaurant",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build"
+    "dev": "parcel src/index.html src/style.scss",
+    "build": "parcel build ./scr/index.html ./src/style.scss"
   },
   "author": "Ilias Dougias",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.10.2",
+    "@parcel/transformer-sass": "^2.10.2",
+    "@parcel/transformer-webmanifest": "^2.10.2",
     "parcel": "^2.10.2"
   }
 }
