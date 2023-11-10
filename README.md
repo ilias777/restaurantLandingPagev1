@@ -19,3 +19,25 @@ Build with:
 * ![ParcelJS](https://img.shields.io/badge/Parcel.JS-darkgreen?style=for-the-badge)
 * ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 * ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+
+## To try this website
+
+Clone the repo
+```shell
+git clone https://github.com/ilias777/restaurantLandingPagev1.git
+```
+
+Navigate to the folder
+```shell
+cd restaurantLandingPagev1
+```
+
+Install npm packages
+```shell
+npm install
+```
+
+Run dev server to see the page
+```
+npm run dev
+```
