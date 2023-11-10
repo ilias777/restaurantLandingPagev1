@@ -1,0 +1,81 @@
+.menu-circle-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $gold-color;
+    z-index: 2;
+    clip-path: circle(30% at 97% -20%);
+    transition: all 0.5s ease-in-out;
+    ul {
+        list-style-type: none;
+        li {
+            text-align: center;
+            margin: 40% 0;
+            a {
+                font-size: 3rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.menu-circle-container.open {
+    transition: all 0.5s ease-in-out;
+    clip-path: circle(100% at 50% 100%);
+}
+
+@mixin circle--phone() {
+    .menu-circle-container {
+        clip-path: circle(30% at 99% -3%);
+        ul {
+            li {
+                a {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+    .menu-circle-container.open {
+        clip-path: circle(100% at 50% 30%);
+    }
+}
+
+@mixin circle--phone-l() {
+    .menu-circle-container {
+        clip-path: circle(35% at 97% -10%);
+        ul {
+            li {
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin circle--tablet-p() {
+    .menu-circle-container {
+        clip-path: circle(30% at 97% -10%);
+        ul {
+            li {
+                margin: 3rem 0;
+            }
+        }
+    }
+    .menu-circle-container.open {
+        clip-path: circle(100% at 50% 30%);;
+    }
+}
+
+@mixin circle--tablet-l() {
+    .menu-circle-container {
+        clip-path: circle(30% at 97% -18%);
+    }
+    .menu-circle-container.open {
+        clip-path: circle(100% at 50% 90%);
+    }
+}

@@ -1,0 +1,99 @@
+.zurAllergene {
+    display: flex;
+    align-items: center;
+    padding: 2% 10%;
+    h3 {
+        margin-right: 2rem;
+        color: black;
+        font-family: 'Lobster', cursive;
+        span {
+            color: $gold-color;
+        }
+    }
+    a {
+        padding: 1.5rem 3rem;
+        background-color: $gold-color;
+        font-size: 1.7rem;
+        border-radius: 7px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        border: 2px solid black;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: #bb9468;
+        }
+    }
+}
+
+.speisekarte-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .kategorie-container {
+        width: 35rem;
+        margin-right: 10rem;
+        .kategorie {
+            background-color: #EBEBEB;
+            text-align: center;
+            margin: 3rem 0;
+            h5 {
+                padding: 1rem 3rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: rgb(75, 75, 75);
+            }
+        }
+        .gerichte-container {
+            margin-bottom: 2rem;
+            .gerichte {
+                display: flex;
+                h6 {
+                    color: black;
+                }
+                .line {
+                    margin: 0 10px;
+                    flex-grow: 1;
+                    border-bottom: 1px solid #dedede;
+                    margin-bottom: 3px;
+                }
+            }
+            p {
+                margin: 1rem 0;
+                font-size: 1.4rem;
+                font-weight: 100;
+                color:  rgb(106, 106, 106);
+            }
+        }
+    }
+}
+
+@mixin speisekarte--phone() {
+    .zurAllergene {
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@mixin speisekarte--phone-l() {
+    .zurAllergene {
+        h3 {
+            font-size: 2.5rem;
+        }
+
+    }
+}
+
+@mixin speisekarte--tablet-p() {
+    .zurAllergene {
+        h3 {
+            font-size: 2.7rem;
+        }
+    }
+}
+

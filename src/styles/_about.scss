@@ -1,0 +1,91 @@
+.about-container {
+    position: relative;
+    background-color: rgb(252, 235, 213);
+    min-height: 50vh;
+    padding: 5rem 0;
+    z-index: 2;
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        color: black;
+        h2 {
+            flex: 1;
+        }
+        .about-info {
+            flex: 2;
+            hr {
+                width: 50%;
+                height: 2px;
+                border: none;
+                background: black;
+            }
+            h5 {
+                padding: 2rem 0;
+            }
+            #thx {
+                font-weight: bold;
+            }
+        }
+    }
+    #svg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0.7;
+        z-index: -1;
+    }
+}
+
+@mixin about--phone() {
+    .about-container {
+        .about {
+            flex-direction: column;
+            h2 {
+                font-size: 4rem;
+                margin-bottom: 3rem;
+            }
+            .about-info {
+                h5 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin about--phone-l() {
+    .about-container {
+        .about {
+            flex-direction: column;
+            h2 {
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+            .about-info {
+                h5 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin about--tablet-p() {
+    .about-container {
+        .about {
+            flex-direction: column;
+            align-items: flex-start;
+            h2 {
+                margin-bottom: 4rem;
+            }
+            .about-info {
+                h5 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

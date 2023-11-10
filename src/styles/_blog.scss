@@ -1,0 +1,79 @@
+.blog-container {
+    background-color: rgb(252, 235, 213);
+    color: black;
+    position: relative;
+    min-height: 50vh;
+    padding: 5rem 0;
+    z-index: 1;
+    .blog {
+        width: 80%;
+        margin: auto;
+        .blogcard {
+            width: 70%;
+            margin: 5rem 0;
+            border-radius: 20px;
+            hr {
+                width: 40%;
+                height: 0.3rem;
+                border: none;
+                background: black;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    svg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+@mixin blog--phone() {
+    .blog-container {
+        .blog {
+            text-align: center;
+            h2 {
+                font-size: 3.5rem;
+            }
+            .blogcard {
+                text-align: left;
+                h2 {
+                    font-size: 4rem;
+                }
+                hr {
+                    width: 70%;
+                }
+                h6 {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+@mixin blog--phone-l() {
+    .blog-container {
+        .blog {
+            text-align: center;
+            h2 {
+                font-size: 4.5rem;
+            }
+            .blogcard {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@mixin blog--tablet-p() {
+    .blog-container {
+        .blog {
+            .blogcard {
+                h6 {
+                    width: 140%;
+                }
+            }
+        }
+    }
+}

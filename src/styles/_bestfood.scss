@@ -1,0 +1,156 @@
+.bestfood-container {
+    background: radial-gradient(#525252, #131313);
+}
+.bestfood {
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+    h2 {
+        padding: 5rem 0;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card {
+            width: 35%;
+            margin: 3rem 5rem;
+            border-radius: 5px;
+            background-color: rgb(252, 235, 213);
+            color: black;
+            h3 {
+                padding: 2rem 2rem;
+            }
+            p {
+                padding: 1rem 2rem;
+            }
+            hr {
+                width: 30%;
+                height: 2px;
+                border: none;
+                background: black;
+            }
+            h4 {
+                padding: 1rem 2rem;;
+            }
+        }
+    }
+    .speisekarte_btn {
+        margin: 5rem 0;
+        padding: 2rem 1.5rem;
+        width: 30rem;
+        border-radius: 10px;
+        border: 2px solid $gold-color;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        a {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+        &:hover {
+            background-color: rgb(252, 235, 213);
+            a {
+                color: black;
+            }
+        }
+    }
+    hr {
+        background: rgb(41, 41, 41);
+        width: 30%;
+        height: 0.1rem;
+        border: none;
+    }
+}
+
+
+@mixin bestfood--phone() {
+    .bestfood-container {
+        .bestfood {
+            text-align: center;
+            h2 {
+                font-size: 3.5rem;
+                padding: 2rem 0;
+            }
+            .cards {
+                .card {
+                    width: 90%;
+                    text-align: left;
+                    h3 {
+                        font-size: 3rem;
+                        padding: 1rem;
+                    }
+                    p {
+                        padding: 1rem;
+                    }
+                    &:nth-child(3) {
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                }
+            }
+            .speisekarte_btn {
+                margin: 4rem auto;
+                width: 25rem;
+                padding: 1.5rem 1.5rem;
+            }
+        }
+    }
+}
+
+@mixin bestfood--phone-l() {
+    .bestfood-container {
+        .bestfood {
+            text-align: center;
+            h2 {
+                font-size: 4rem;
+            }
+            .cards {
+                flex-direction: column;
+                align-items: center;
+                .card {
+                    width: 70%;
+                }
+            }
+            .speisekarte_btn {
+                margin: 4rem auto;
+            }
+        }
+    }
+}
+
+@mixin bestfood--tablet-p() {
+    .bestfood-container {
+        .bestfood {
+            h2 {
+                margin-left: 10%;
+            }
+            .cards {
+                justify-content: space-evenly;
+                .card {
+                    width: 40%;
+                    margin: 2rem 0;
+                }
+            }
+            .speisekarte_btn {
+                margin-left: 10%;
+            }
+        }
+    }
+}
+
+@mixin bestfood--tablet-l() {
+    .bestfood-container {
+        .bestfood {
+            hr {
+                background: black;
+            }
+            .cards {
+                .card {
+                    width: 37%;
+                }
+            }
+        }
+    }
+}

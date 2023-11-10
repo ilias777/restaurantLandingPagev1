@@ -1,0 +1,37 @@
+.logo {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -7px;
+        width: 0.4rem;
+        height: 5.2rem;
+        background: $gold-color;
+    }
+}
+.logo2 {
+    color: $gold-color;
+}
+.data-container {
+    background-color: rgb(252, 235, 213);
+    color: black;
+    .data {
+        width: 80%;
+        margin: auto;
+        padding: 3rem 0;
+    }
+    h3 {
+        color: rgb(21, 21, 21);
+        padding-bottom: 3rem;
+    }
+    h5 {
+        text-decoration: underline;
+    }
+    p {
+        padding: 2rem 0;
+        a {
+            color: black;
+        }
+    }
+}

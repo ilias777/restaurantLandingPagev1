@@ -1,0 +1,55 @@
+@import "home";
+@import "menu-circle";
+@import "about";
+@import "bestfood";
+@import "blog";
+@import "footer";
+
+
+// Phone portraid
+@media screen and (min-width: 320px) and (max-width: 559px){
+    @include home--phone();
+    @include circle--phone();
+    @include about--phone();
+    @include bestfood--phone();
+    @include blog--phone();
+    @include footer--phone();
+    @include speisekarte--phone();
+}
+// Phone lanscape
+@media screen and (min-width: 560px) and (max-width: 739px){
+    @include home--phone-l();
+    @include circle--phone-l();
+    @include about--phone-l();
+    @include bestfood--phone-l();
+    @include blog--phone-l();
+    @include footer--phone-l();
+    @include speisekarte--phone-l();
+}
+// Tablet portraid
+@media screen and (min-width: 740px) and (max-width: 1023px){
+    @include home--tablet-p();
+    @include circle--tablet-p();
+    @include about--tablet-p();
+    @include bestfood--tablet-p();
+    @include blog--tablet-p();
+    @include footer--tablet-p();
+    @include speisekarte--tablet-p();
+}
+
+// Tablet lanscape
+@media screen and (min-width: 1024px) and (max-width: 1364px){
+    @include home--tablet-l();
+    @include circle--tablet-l();
+    @include bestfood--tablet-l();
+    @include footer--tablet-l();
+}
+// Desktop
+@media screen and (min-width: 1365px){
+    @include home--desktop();
+    @include footer--desktop();
+}
+// Large screens
+@media screen and (min-width: 1824px){
+
+}
